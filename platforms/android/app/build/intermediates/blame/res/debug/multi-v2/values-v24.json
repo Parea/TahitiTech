@@ -4,7 +4,7 @@
             "outputFile": "G:\\AppsMobileParetz\\newsApi\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Parea\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\5e0dd7d863b1522670d44303db29b7d2\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\Paretz\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\e6cfcc6764005180e42d3966b58b92c3\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

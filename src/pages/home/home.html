@@ -1,33 +1,31 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title class="head-title">Actualitées</ion-title>
-  </ion-navbar>
+  <ion-toolbar>
+    <ion-segment>
+      <ion-segment-button (click)="getArticlesTech()"  value="Technologie">
+        Technologie
+      </ion-segment-button>
+      <ion-segment-button (click)="getArticlesBusiness()" value="Affaires">
+        Affaires
+      </ion-segment-button>
+      <ion-segment-button  (click)="getArticlesHealth()" value="Santé">
+        Santé
+      </ion-segment-button>
+      <ion-segment-button (click)="getArticlesEntertainment()" value="Divertissement">
+        Divertissement
+      </ion-segment-button>
+      <ion-segment-button (click)="getArticlesSports()" value="Sport">
+        Sport
+      </ion-segment-button>
+      <ion-segment-button (click)="getAllArticles()" value="Autres">
+        Autres...
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
 </ion-header>
-<ion-content>
-<!-- 
-  <ion-list inset>
-    <button ion-item (click)="getArticlesTech()">
-      Technologie
-    </button>
-    
-    <button ion-item (click)="getArticlesBusiness()">
-      Business
-    </button> 
 
-    <button ion-item (click)="getArticlesHealth()">
-      Santé
-    </button> 
+<ion-content class="card-background-page">
 
-    <button ion-item (click)="getArticlesEntertainment()">
-      Entreprise
-    </button>
-    
-    <button ion-item (click)="getArticlesSports()">
-      Sport
-    </button> 
-  </ion-list> -->
-
-  <ion-chip (click)="getArticlesTech()" #chip1>
+  <!-- <ion-chip (click)="getArticlesTech()" #chip1>
     <ion-avatar>
       <img src="assets/imgs/chips.png">
     </ion-avatar>
@@ -67,9 +65,9 @@
       <img src="assets/imgs/chips.png">
     </ion-avatar>
     <ion-label>Autre...</ion-label>
-  </ion-chip>
+  </ion-chip> -->
 
-  <ion-card class="cards" *ngFor="let article of news.articles">
+  <!-- <ion-card class="cards" *ngFor="let article of news.articles">
 
     <ion-item text-wrap>
       <ion-card-title>
@@ -95,5 +93,11 @@
       </ion-col>
     </ion-row>
   
+  </ion-card> -->
+
+  <ion-card class="cards" *ngFor="let article of news.articles">
+    <a href="{{ article.url }}"><img [src]="article.urlToImage" /></a>
+    <div class="card-title">{{ article.title }}</div>
+    <div class="card-subtitle">Publier le {{ article.publishedAt | date: "dd/MM/yyyy hh:mm"}} par {{ article.author }}</div>
   </ion-card>
 </ion-content>

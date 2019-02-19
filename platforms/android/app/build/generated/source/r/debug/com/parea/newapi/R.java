@@ -371,9 +371,9 @@ public final class R {
      * @see #FontFamily_fontProviderQuery
      */
     public static final int[] FontFamily={
-        0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 
-        0x7f010008, 0x7f010009
-      };
+      0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 
+      0x7f010008, 0x7f010009
+    };
     /**
      * <p>This symbol is the offset where the {@link com.parea.newapi.R.attr#fontProviderAuthority}
      * attribute's value can be found in the {@link #FontFamily} array.
@@ -466,8 +466,8 @@ public final class R {
      * @see #FontFamilyFont_fontWeight
      */
     public static final int[] FontFamilyFont={
-        0x7f010003, 0x7f01000a, 0x7f01000b
-      };
+      0x7f010003, 0x7f01000a, 0x7f01000b
+    };
     /**
      * <p>This symbol is the offset where the {@link com.parea.newapi.R.attr#font}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
@@ -522,8 +522,8 @@ public final class R {
      * @see #LoadingImageView_imageAspectRatioAdjust
      */
     public static final int[] LoadingImageView={
-        0x7f010001, 0x7f01000c, 0x7f01000d
-      };
+      0x7f010001, 0x7f01000c, 0x7f01000d
+    };
     /**
      * <p>This symbol is the offset where the {@link com.parea.newapi.R.attr#circleCrop}
      * attribute's value can be found in the {@link #LoadingImageView} array.
@@ -577,8 +577,8 @@ public final class R {
      * @see #SignInButton_scopeUris
      */
     public static final int[] SignInButton={
-        0x7f010000, 0x7f010002, 0x7f01000e
-      };
+      0x7f010000, 0x7f010002, 0x7f01000e
+    };
     /**
      * <p>This symbol is the offset where the {@link com.parea.newapi.R.attr#buttonSize}
      * attribute's value can be found in the {@link #SignInButton} array.
