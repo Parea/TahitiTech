@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "157333484297",
+    "firebase_url": "https://newapiparea.firebaseio.com",
+    "project_id": "newapiparea",
+    "storage_bucket": "newapiparea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157333484297:android:3fa6948df5bcc5c2",
+        "android_client_info": {
+          "package_name": "com.parea.newapi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157333484297-r0pvrtnacrbdkov4p5br9tr3529d8f2d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.parea.newapi",
+            "certificate_hash": "3aeceedb9e90e1c374f290134a346561f98de624"
+          }
+        },
+        {
+          "client_id": "157333484297-hfoa7ctc10fhd0hpg5g7sv1ht49hm417.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASvMnZefbmbT-OMiduHZVOvU9In-t3asE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "157333484297-hfoa7ctc10fhd0hpg5g7sv1ht49hm417.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

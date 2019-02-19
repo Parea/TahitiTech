@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      SpeechDict
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="intro-wrapper">
+    <p>Appuyer sur 'Lancer' puis parler à votre appareil de manière claire et précise</p>
+    <button ion-button [color]="(isListening) ? 'danger' : 'secondary' " (tap)="(isListening) ? stopListening() : startListening()">
+      {{ (isListening) ? 'Stop' : 'Lancer' }}
+    </button>
+  </div>
+  <ion-list class="matches-wrapper">
+    <ion-item *ngIf="matches.length <= 0">
+      Aucun résultat veuillez recommencer !
+    </ion-item> 
+    <ion-item *ngFor="let match of matches">
+      {{ match }}
+    </ion-item> 
+  </ion-list>
+</ion-content>
