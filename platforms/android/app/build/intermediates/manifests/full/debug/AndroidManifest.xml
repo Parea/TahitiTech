@@ -26,6 +26,7 @@
 
     <uses-permission android:name="io.ionic.starter.permission.RECEIVE_ADM_MESSAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
     <permission
         android:name="com.parea.newapi.permission.C2D_MESSAGE"
@@ -102,6 +103,23 @@
                 <category android:name="io.ionic.starter" />
             </intent-filter>
         </receiver>
+        <receiver
+            android:name="nl.xservices.plugins.ShareChooserPendingIntent"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="nl.xservices.plugins.FileProvider"
+            android:authorities="com.parea.newapi.sharing.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/sharing_paths" />
+        </provider>
 
         <meta-data
             android:name="onesignal_app_id"

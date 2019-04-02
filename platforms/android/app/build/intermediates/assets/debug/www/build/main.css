@@ -25687,6 +25687,29 @@ page-home .cards {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
+page-home .card-background-page ion-card {
+  position: relative;
+  text-align: center;
+}
+
+page-home .card-background-page .card-title {
+  position: absolute;
+  top: 0;
+  font-size: 1.5em;
+  width: 100%;
+  font-weight: bold;
+  color: #07a507;
+}
+
+page-home .card-background-page .card-subtitle {
+  font-size: 1.2em;
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  font-weight: bold;
+  color: #07a507;
+}
+
 page-home-details .head-title {
   text-align: center;
 }

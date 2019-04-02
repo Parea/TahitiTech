@@ -61,9 +61,9 @@ var HomeDetailsPage = /** @class */ (function () {
     };
     HomeDetailsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home-details',template:/*ion-inline-start:"G:\AppsMobileParetz\newsApi\src\pages\home-details\home-details.html"*/'<ion-header>\n</ion-header>\n\n<ion-content>\n  \n</ion-content>\n'/*ion-inline-end:"G:\AppsMobileParetz\newsApi\src\pages\home-details\home-details.html"*/,
+            selector: 'page-home-details',template:/*ion-inline-start:"D:\AppsMobileParetz\newsApi\src\pages\home-details\home-details.html"*/'<ion-header>\n</ion-header>\n\n<ion-content>\n  \n</ion-content>\n'/*ion-inline-end:"D:\AppsMobileParetz\newsApi\src\pages\home-details\home-details.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__services_newsapi_service__["a" /* NewsApiService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__services_newsapi_service__["a" /* NewsApiService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */]])
     ], HomeDetailsPage);
     return HomeDetailsPage;
 }());
@@ -144,7 +144,7 @@ var TabsPage = /** @class */ (function () {
         this.tab4Root = __WEBPACK_IMPORTED_MODULE_3__contact_contact__["a" /* ContactPage */];
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({template:/*ion-inline-start:"G:\AppsMobileParetz\newsApi\src\pages\tabs\tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Accueil" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Affichage" tabIcon="ios-folder"></ion-tab>\n  <ion-tab [root]="tab4Root" tabTitle="Contact" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"G:\AppsMobileParetz\newsApi\src\pages\tabs\tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\AppsMobileParetz\newsApi\src\pages\tabs\tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Accueil" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Affichage" tabIcon="ios-folder"></ion-tab>\n  <ion-tab [root]="tab4Root" tabTitle="Contact" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"D:\AppsMobileParetz\newsApi\src\pages\tabs\tabs.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
@@ -217,9 +217,9 @@ var AboutPage = /** @class */ (function () {
     };
     AboutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-about',template:/*ion-inline-start:"G:\AppsMobileParetz\newsApi\src\pages\about\about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      SpeechDict\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <div class="intro-wrapper">\n    <p>Appuyer sur \'Lancer\' puis parler à votre appareil de manière claire et précise</p>\n    <button ion-button [color]="(isListening) ? \'danger\' : \'secondary\' " (tap)="(isListening) ? stopListening() : startListening()">\n      {{ (isListening) ? \'Stop\' : \'Lancer\' }}\n    </button>\n  </div>\n  <ion-list class="matches-wrapper">\n    <ion-item *ngIf="matches.length <= 0">\n      Aucun résultat veuillez recommencer !\n    </ion-item> \n    <ion-item *ngFor="let match of matches">\n      {{ match }}\n    </ion-item> \n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"G:\AppsMobileParetz\newsApi\src\pages\about\about.html"*/
+            selector: 'page-about',template:/*ion-inline-start:"D:\AppsMobileParetz\newsApi\src\pages\about\about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      SpeechDict\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <div class="intro-wrapper">\n    <p>Appuyer sur \'Lancer\' puis parler à votre appareil de manière claire et précise</p>\n    <button ion-button [color]="(isListening) ? \'danger\' : \'secondary\' " (tap)="(isListening) ? stopListening() : startListening()">\n      {{ (isListening) ? \'Stop\' : \'Lancer\' }}\n    </button>\n  </div>\n  <ion-list class="matches-wrapper">\n    <ion-item *ngIf="matches.length <= 0">\n      Aucun résultat veuillez recommencer !\n    </ion-item> \n    <ion-item *ngFor="let match of matches">\n      {{ match }}\n    </ion-item> \n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"D:\AppsMobileParetz\newsApi\src\pages\about\about.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_speech_recognition__["a" /* SpeechRecognition */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["j" /* ChangeDetectorRef */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_speech_recognition__["a" /* SpeechRecognition */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["j" /* ChangeDetectorRef */]])
     ], AboutPage);
     return AboutPage;
 }());
@@ -252,9 +252,9 @@ var ContactPage = /** @class */ (function () {
     }
     ContactPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-contact',template:/*ion-inline-start:"G:\AppsMobileParetz\newsApi\src\pages\contact\contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-start></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"G:\AppsMobileParetz\newsApi\src\pages\contact\contact.html"*/
+            selector: 'page-contact',template:/*ion-inline-start:"D:\AppsMobileParetz\newsApi\src\pages\contact\contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-start></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"D:\AppsMobileParetz\newsApi\src\pages\contact\contact.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
     ], ContactPage);
     return ContactPage;
 }());
@@ -285,11 +285,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+// import { SocialSharingOriginal } from '@ionic-native/social-sharing';
+// import { FileOriginal } from '@ionic-native/file';
 var HomePage = /** @class */ (function () {
-    function HomePage(navCtrl, NewsApiService, platform) {
+    function HomePage(navCtrl, NewsApiService, platform, loadingCtrl) {
         this.navCtrl = navCtrl;
         this.NewsApiService = NewsApiService;
         this.platform = platform;
+        this.loadingCtrl = loadingCtrl;
         this.news = new __WEBPACK_IMPORTED_MODULE_2__models_newsapi_global_model__["a" /* NewsApiGlobal */]();
         this.platform.ready().then(function () {
         });
@@ -313,6 +316,15 @@ var HomePage = /** @class */ (function () {
             }
         });
     };
+    HomePage.prototype.presentLoadingDefault = function () {
+        var loading = this.loadingCtrl.create({
+            content: 'Chargement en cours...'
+        });
+        loading.present();
+        setTimeout(function () {
+            loading.dismiss();
+        }, 2000);
+    };
     HomePage.prototype.getArticlesTech = function (articleAuthor, articleTitle, articleDescritpion, articlePublished, articleUrl, articleUrlToImage) {
         var _this = this;
         this.NewsApiService.getArticlesTech()
@@ -327,6 +339,7 @@ var HomePage = /** @class */ (function () {
                 _this.news.articles[i].urlToImage;
             }
             console.log('tech: ', _this.news);
+            _this.presentLoadingDefault();
         });
         // this.navCtrl.push(HomeDetailsPage, {title:articleTitle, author: articleAuthor, description:articleDescritpion, publishedAt:articlePublished, url:articleUrl, urlToImage: articleUrlToImage});
     };
@@ -344,6 +357,7 @@ var HomePage = /** @class */ (function () {
                 _this.news.articles[i].urlToImage;
             }
             console.log('sports: ', _this.news);
+            _this.presentLoadingDefault();
         });
         // this.navCtrl.push(HomeDetailsPage, {title:articleTitle, author: articleAuthor, description:articleDescritpion, publishedAt:articlePublished, url:articleUrl, urlToImage: articleUrlToImage});
     };
@@ -361,6 +375,7 @@ var HomePage = /** @class */ (function () {
                 _this.news.articles[i].urlToImage;
             }
             console.log('business: ', _this.news);
+            _this.presentLoadingDefault();
         });
         // this.navCtrl.push(HomeDetailsPage, {title:articleTitle, author: articleAuthor, description:articleDescritpion, publishedAt:articlePublished, url:articleUrl, urlToImage: articleUrlToImage});
     };
@@ -378,6 +393,7 @@ var HomePage = /** @class */ (function () {
                 _this.news.articles[i].urlToImage;
             }
             console.log('entertainment: ', _this.news);
+            _this.presentLoadingDefault();
         });
         // this.navCtrl.push(HomeDetailsPage, {title:articleTitle, author: articleAuthor, description:articleDescritpion, publishedAt:articlePublished, url:articleUrl, urlToImage: articleUrlToImage});
     };
@@ -395,6 +411,7 @@ var HomePage = /** @class */ (function () {
                 _this.news.articles[i].urlToImage;
             }
             console.log('health: ', _this.news);
+            _this.presentLoadingDefault();
         });
         // this.navCtrl.push(HomeDetailsPage, {title:articleTitle, author: articleAuthor, description:articleDescritpion, publishedAt:articlePublished, url:articleUrl, urlToImage: articleUrlToImage});
     };
@@ -412,14 +429,15 @@ var HomePage = /** @class */ (function () {
                 _this.news.articles[i].urlToImage;
             }
             console.log('Allnews: ', _this.news);
+            _this.presentLoadingDefault();
         });
         // this.navCtrl.push(HomeDetailsPage, {title:articleTitle, author: articleAuthor, description:articleDescritpion, publishedAt:articlePublished, url:articleUrl, urlToImage: articleUrlToImage});
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"G:\AppsMobileParetz\newsApi\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-toolbar>\n\n    <ion-segment>\n\n      <ion-segment-button (click)="getArticlesTech()"  value="Technologie">\n\n        Technologie\n\n      </ion-segment-button>\n\n      <ion-segment-button (click)="getArticlesBusiness()" value="Affaires">\n\n        Affaires\n\n      </ion-segment-button>\n\n      <ion-segment-button  (click)="getArticlesHealth()" value="Santé">\n\n        Santé\n\n      </ion-segment-button>\n\n      <ion-segment-button (click)="getArticlesEntertainment()" value="Divertissement">\n\n        Divertissement\n\n      </ion-segment-button>\n\n      <ion-segment-button (click)="getArticlesSports()" value="Sport">\n\n        Sport\n\n      </ion-segment-button>\n\n      <ion-segment-button (click)="getAllArticles()" value="Autres">\n\n        Autres...\n\n      </ion-segment-button>\n\n    </ion-segment>\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n<ion-content class="card-background-page">\n\n\n\n  <!-- <ion-chip (click)="getArticlesTech()" #chip1>\n\n    <ion-avatar>\n\n      <img src="assets/imgs/chips.png">\n\n    </ion-avatar>\n\n    <ion-label>Technologie</ion-label>\n\n  </ion-chip>\n\n\n\n  <ion-chip (click)="getArticlesBusiness()" #chip2>\n\n    <ion-avatar>\n\n      <img src="assets/imgs/chips.png">\n\n    </ion-avatar>\n\n    <ion-label>Business</ion-label>\n\n  </ion-chip>\n\n\n\n  <ion-chip (click)="getArticlesHealth()" #chip3>\n\n    <ion-avatar>\n\n      <img src="assets/imgs/chips.png">\n\n    </ion-avatar>\n\n    <ion-label>Santé</ion-label>\n\n  </ion-chip>\n\n\n\n  <ion-chip (click)="getArticlesEntertainment()" #chip4>\n\n    <ion-avatar>\n\n      <img src="assets/imgs/chips.png">\n\n    </ion-avatar>\n\n    <ion-label>Divertissement</ion-label>\n\n  </ion-chip>\n\n\n\n  <ion-chip (click)="getArticlesSports()" #chip5>\n\n    <ion-avatar>\n\n      <img src="assets/imgs/chips.png">\n\n    </ion-avatar>\n\n    <ion-label>Sports</ion-label>\n\n  </ion-chip>\n\n\n\n  <ion-chip (click)="getAllArticles()" #chip6>\n\n    <ion-avatar>\n\n      <img src="assets/imgs/chips.png">\n\n    </ion-avatar>\n\n    <ion-label>Autre...</ion-label>\n\n  </ion-chip> -->\n\n\n\n  <!-- <ion-card class="cards" *ngFor="let article of news.articles">\n\n\n\n    <ion-item text-wrap>\n\n      <ion-card-title>\n\n        {{ article.title }}\n\n      </ion-card-title>\n\n    </ion-item>\n\n  \n\n    <a href="{{ article.url }}"><img [src]="article.urlToImage" /></a>\n\n  \n\n    <ion-card-content>\n\n      <p>{{ article.description }}</p>\n\n    </ion-card-content>\n\n\n\n    <ion-card-content>\n\n      <a href="{{ article.url }}">{{ article.url }}</a>\n\n    </ion-card-content>\n\n  \n\n    <ion-row>\n\n      <ion-col center text-center>\n\n        <ion-note>\n\n          Publier le {{ article.publishedAt | date: "dd/MM/yyyy hh:mm"}} par {{ article.author }}\n\n        </ion-note>\n\n      </ion-col>\n\n    </ion-row>\n\n  \n\n  </ion-card> -->\n\n\n\n  <ion-card class="cards" *ngFor="let article of news.articles">\n\n    <a href="{{ article.url }}"><img [src]="article.urlToImage" /></a>\n\n    <div class="card-title">{{ article.title }}</div>\n\n    <div class="card-subtitle">Publier le {{ article.publishedAt | date: "dd/MM/yyyy hh:mm"}} par {{ article.author }}</div>\n\n  </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"G:\AppsMobileParetz\newsApi\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"D:\AppsMobileParetz\newsApi\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-toolbar>\n\n    <ion-segment>\n\n      <ion-segment-button (click)="getArticlesTech()"  value="Technologie">\n\n        Technologie\n\n      </ion-segment-button>\n\n      <ion-segment-button (click)="getArticlesBusiness()" value="Affaires">\n\n        Affaires\n\n      </ion-segment-button>\n\n      <ion-segment-button  (click)="getArticlesHealth()" value="Santé">\n\n        Santé\n\n      </ion-segment-button>\n\n      <ion-segment-button (click)="getArticlesEntertainment()" value="Divertissement">\n\n        Divertissement\n\n      </ion-segment-button>\n\n      <ion-segment-button (click)="getArticlesSports()" value="Sport">\n\n        Sport\n\n      </ion-segment-button>\n\n      <ion-segment-button (click)="getAllArticles()" value="Autres">\n\n        Autres...\n\n      </ion-segment-button>\n\n    </ion-segment>\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-card class="cards" *ngFor="let article of news.articles">\n\n    <img [src]="article.urlToImage">\n\n\n\n    <ion-card-content>\n\n      <ion-card-title>\n\n        {{ article.title}}\n\n      </ion-card-title>\n\n      <p>{{ article.description}}</p>\n\n    </ion-card-content>\n\n\n\n    <ion-row>\n\n      <ion-col align-self-center text-center>\n\n        <ion-note>\n\n          Publié le {{ article.publishedAt | date: "dd/MM/yyyy hh:mm"}}\n\n        </ion-note>\n\n      </ion-col>\n\n\n\n      <ion-col>\n\n        <button ion-button clear small color="primary" icon-start (click)="shareFacebook()">\n\n          <ion-icon md="logo-facebook"></ion-icon>\n\n          Facebook\n\n        </button>\n\n      </ion-col>\n\n\n\n      <ion-col>\n\n        <button ion-button clear small color="primary" icon-start (click)="shareInstagram()">\n\n          <ion-icon md="logo-instagram"></ion-icon>\n\n          Instagram\n\n        </button>\n\n      </ion-col>\n\n      \n\n    </ion-row>\n\n  </ion-card>\n\n  \n\n</ion-content>\n\n'/*ion-inline-end:"D:\AppsMobileParetz\newsApi\src\pages\home\home.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_3__services_newsapi_service__["a" /* NewsApiService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_3__services_newsapi_service__["a" /* NewsApiService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */]])
     ], HomePage);
     return HomePage;
 }());
@@ -485,6 +503,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+// import { FileOriginal } from '@ionic-native/file';
+// import { SocialSharingOriginal } from '@ionic-native/social-sharing';
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -523,7 +543,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_13__ionic_native_onesignal__["a" /* OneSignal */],
                 __WEBPACK_IMPORTED_MODULE_14__ionic_native_speech_recognition__["a" /* SpeechRecognition */],
                 __WEBPACK_IMPORTED_MODULE_15__ionic_native_sqlite__["a" /* SQLite */],
-                { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["b" /* IonicErrorHandler */] }
+                { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["b" /* IonicErrorHandler */] },
             ]
         })
     ], AppModule);
@@ -585,9 +605,9 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({template:/*ion-inline-start:"G:\AppsMobileParetz\newsApi\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"G:\AppsMobileParetz\newsApi\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\AppsMobileParetz\newsApi\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"D:\AppsMobileParetz\newsApi\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_0__ionic_native_onesignal__["a" /* OneSignal */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_speech_recognition__["a" /* SpeechRecognition */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_0__ionic_native_onesignal__["a" /* OneSignal */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_speech_recognition__["a" /* SpeechRecognition */]])
     ], MyApp);
     return MyApp;
 }());

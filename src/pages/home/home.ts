@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { NavController, Platform } from 'ionic-angular';
+import { NavController, Platform, LoadingController } from 'ionic-angular';
 
 import { NewsApiGlobal } from './../../models/newsapi-global.model';
 import { NewsApiService } from './../../services/newsapi.service';
-import { HomeDetailsPage } from '../home-details/home-details';
 
+// import { SocialSharingOriginal } from '@ionic-native/social-sharing';
+// import { FileOriginal } from '@ionic-native/file';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -19,7 +20,7 @@ export class HomePage {
   urlToImage: any;
   publishedAt: any;
 
-  constructor(public navCtrl: NavController, private NewsApiService: NewsApiService, private platform: Platform) {
+  constructor(public navCtrl: NavController, private NewsApiService: NewsApiService, private platform: Platform, private loadingCtrl: LoadingController) {
     this.platform.ready().then(() => {
     });
   }
@@ -42,6 +43,18 @@ export class HomePage {
       });
   }
 
+  presentLoadingDefault() {
+    let loading = this.loadingCtrl.create({
+      content: 'Chargement en cours...'
+    });
+  
+    loading.present();
+  
+    setTimeout(() => {
+      loading.dismiss();
+    }, 2000);
+  }
+
   public getArticlesTech(articleAuthor: any, articleTitle: any, articleDescritpion: any, articlePublished: any, articleUrl: any, articleUrlToImage: any): void {
     this.NewsApiService.getArticlesTech()
       .then(data => {
@@ -55,6 +68,7 @@ export class HomePage {
           this.news.articles[i].urlToImage;
         }
         console.log('tech: ',this.news);
+        this.presentLoadingDefault();
       });
     
       // this.navCtrl.push(HomeDetailsPage, {title:articleTitle, author: articleAuthor, description:articleDescritpion, publishedAt:articlePublished, url:articleUrl, urlToImage: articleUrlToImage});
@@ -73,6 +87,7 @@ export class HomePage {
           this.news.articles[i].urlToImage;
         }
         console.log('sports: ',this.news);
+        this.presentLoadingDefault();
       });
       // this.navCtrl.push(HomeDetailsPage, {title:articleTitle, author: articleAuthor, description:articleDescritpion, publishedAt:articlePublished, url:articleUrl, urlToImage: articleUrlToImage});
   }
@@ -90,6 +105,7 @@ export class HomePage {
           this.news.articles[i].urlToImage;
         }
         console.log('business: ',this.news);
+        this.presentLoadingDefault();
       });
     
       // this.navCtrl.push(HomeDetailsPage, {title:articleTitle, author: articleAuthor, description:articleDescritpion, publishedAt:articlePublished, url:articleUrl, urlToImage: articleUrlToImage});
@@ -108,6 +124,7 @@ export class HomePage {
           this.news.articles[i].urlToImage;
         }
         console.log('entertainment: ',this.news);
+        this.presentLoadingDefault();
       });
 
     // this.navCtrl.push(HomeDetailsPage, {title:articleTitle, author: articleAuthor, description:articleDescritpion, publishedAt:articlePublished, url:articleUrl, urlToImage: articleUrlToImage});
@@ -126,6 +143,7 @@ export class HomePage {
           this.news.articles[i].urlToImage;
         }
         console.log('health: ',this.news);
+        this.presentLoadingDefault();
       });
     
       // this.navCtrl.push(HomeDetailsPage, {title:articleTitle, author: articleAuthor, description:articleDescritpion, publishedAt:articlePublished, url:articleUrl, urlToImage: articleUrlToImage});
@@ -145,9 +163,41 @@ export class HomePage {
           this.news.articles[i].urlToImage;
         }
         console.log('Allnews: ', this.news);
+        this.presentLoadingDefault();
       });
 
       // this.navCtrl.push(HomeDetailsPage, {title:articleTitle, author: articleAuthor, description:articleDescritpion, publishedAt:articlePublished, url:articleUrl, urlToImage: articleUrlToImage});
   }
+
+  // async resolvedLocalFile() {
+  //   return this.file.copyFile(`${this.file.applicationDirectory}www/assets/imgs`,'icon.png',
+  //   this.file.cacheDirectory, `${new Date().getTime()}.png`)
+  // }
+
+  // removeTempFile(name) {
+  //   this.file.removeFile(this.file.cacheDirectory, name);
+  // }
+
+  // async shareFacebook() {
+  //   let file = await this.resolvedLocalFile();
+  //   console.log('FILE: ', file);
+
+  //   this.socialsharing.shareViaFacebook(null, this.urlToImage, this.url).then(() => {
+  //     this.removeTempFile(file.name);
+  //   }).catch (e => {
+
+  //   })
+  // };
+
+  // async shareInstagram() {
+  //   let file = await this.resolvedLocalFile();
+  //   console.log('FILE: ', file);
+    
+  //   this.socialsharing.shareViaInstagram(null, this.urlToImage).then(() => {
+  //     this.removeTempFile(file.name);
+  //   }).catch (e => {
+      
+  //   })
+  // };
 
 }

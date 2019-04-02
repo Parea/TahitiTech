@@ -1,4 +1,4 @@
-#Mon Feb 18 22:28:46 HST 2019
-base.0=G\:\\AppsMobileParetz\\newsApi\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Mon Apr 01 17:36:39 HST 2019
+base.0=D\:\\AppsMobileParetz\\newsApi\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 renamed.0=classes.dex
-file.0=G\:\\AppsMobileParetz\\newsApi\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex
+file.0=D\:\\AppsMobileParetz\\newsApi\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex

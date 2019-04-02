@@ -17,6 +17,8 @@ import { HttpModule } from '@angular/http';
 import { OneSignal } from '@ionic-native/onesignal';
 import { SpeechRecognition } from '@ionic-native/speech-recognition';
 import { SQLite } from '@ionic-native/sqlite';
+// import { FileOriginal } from '@ionic-native/file';
+// import { SocialSharingOriginal } from '@ionic-native/social-sharing';
 @NgModule({
   declarations: [
     MyApp,
@@ -47,7 +49,9 @@ import { SQLite } from '@ionic-native/sqlite';
     OneSignal,
     SpeechRecognition,
     SQLite,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    // FileOriginal,
+    // SocialSharingOriginal,
   ]
 })
 export class AppModule {}

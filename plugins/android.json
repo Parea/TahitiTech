@@ -33,7 +33,18 @@
     },
     "cordova-sqlite-storage": {
       "PACKAGE_NAME": "com.parea.newapi"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "ANDROID_SUPPORT_V4_VERSION": "24.1.1+",
+      "PACKAGE_NAME": "com.parea.newapi"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.parea.newapi"
     }
   },
-  "dependent_plugins": {}
+  "dependent_plugins": {
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "com.parea.newapi"
+    }
+  }
 }
